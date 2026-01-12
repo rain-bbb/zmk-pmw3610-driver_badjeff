@@ -94,6 +94,10 @@ config PMW3610_ALT_REST3_SAMPLE_TIME_MS
     help
       Default REST2 mode sample period in millisecond.
 
+config PMW3610_ADJUSTABLE_MOUSESPEED
+  bool "Enable Adujutable mouse speed"
+  default n
+
 module = PMW3610_ALT
 module-str = PMW3610_ALT
 source "${ZEPHYR_BASE}/subsys/logging/Kconfig.template.log_config"
